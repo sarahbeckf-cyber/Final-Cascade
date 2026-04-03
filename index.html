@@ -146,7 +146,7 @@ function renderMDs(){
   panel.innerHTML="";
   var hdr=document.createElement("div");hdr.className="md-hdr";
   hdr.innerHTML="<div><div class=\"lb\">Exec Medical Director</div><div class=\"nm\">"+esc(e.n)+"</div>"
-    +"<div class=\"sb\">CMO: John Fangman \u00b7 "+e.m.length+" Medical Directors \u00b7 "+e.t+" Cost Centers</div></div>"
+    +"<div class=\"sb\">CMO: John Fangman - "+e.m.length+" Medical Directors - "+e.t+" Cost Centers</div></div>"
     +"<button class=\"cbtn\" onclick=\"curEMD=null;addingTo=null;buildEMDs();renderMDs()\">Close \u2715</button>";
   panel.appendChild(hdr);
   var mg=document.createElement("div");mg.className="mg";
