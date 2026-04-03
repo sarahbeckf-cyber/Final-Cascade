@@ -187,7 +187,7 @@ function renderMDs(){
       if(extras.length>0){
         var exDiv=document.createElement("div");exDiv.style.padding="4px 14px 2px";
         for(var j=0;j<extras.length;j++){
-          exDiv.innerHTML+="<div class=\"ds\"><span class=\"dd\" style=\"background:var(--blue)\"></span><span style=\"color:var(--blue);font-size:10px\">"+esc(extras[j].name)+" \u2014 "+esc(extras[j].role)+"</span></div>";
+          exDiv.innerHTML+="<div class=\"ds\"><span class=\"dd\" style=\"background:var(--blue)\"></span><span style=\"color:var(--blue);font-size:10px\">"+esc(extras[j].name)+" - "+esc(extras[j].role)+"</span></div>";
         }
         card.appendChild(exDiv);
       }
